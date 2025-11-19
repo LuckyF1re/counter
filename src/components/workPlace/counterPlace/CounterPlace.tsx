@@ -12,7 +12,6 @@ type CounterPlace = {
 }
 
 export const CounterPlace = (props: CounterPlace   ) => {
-
     const isDisabled = () => {
         if (props.maxValue === props.count) {
             return true;
@@ -22,13 +21,9 @@ export const CounterPlace = (props: CounterPlace   ) => {
         }
         return false;
     }
-
-
     return (
         <div className={styles.window}>
-
             <div className={styles.valuePlace} style={{padding:'0px'}}>
-
                 {props.isError
                     ?
                     (<p className={styles.setValue} style={{color:'red', fontSize:'40px'}}><b>Incorrect value!</b></p>)
@@ -46,10 +41,7 @@ export const CounterPlace = (props: CounterPlace   ) => {
                             )
                     )
                 }
-
             </div>
-
-
             <div className={styles.buttonPlace}>
                 <Button
                     onClick={()=>props.incHandler()}
@@ -57,14 +49,12 @@ export const CounterPlace = (props: CounterPlace   ) => {
                 >
                     inc
                 </Button>
-
                 <Button
                     onClick={()=>props.resetHandler()}
                     disabled={props.isSettingChanged}
                 >
                     reset
                 </Button>
-
             </div>
         </div>
     );

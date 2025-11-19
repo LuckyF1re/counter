@@ -8,17 +8,26 @@
 
 .body {
     min-width: 640px;
-    /*min-height: 720px ;*/
-
-
-
-
     display: flex;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
 
+}
+
+@media (max-width: 1065px) {
+    .body {
+        flex-direction: column;
+        gap: 20px;
+        min-width: auto;
+        padding: 20px;
+    }
+
+    .window {
+        width: 100%;
+        max-width: 400px;
+    }
 }
 
 .window {
@@ -90,9 +99,9 @@
 }
 
 .input.error {
-    border-color: #ff4444; /* Красная граница */
-    background-color: #fff0f0; /* Светло-красный фон */
-    color: red; /* Красный текст */
+    border-color: #ff4444;
+    background-color: #fff0f0;
+    color: red;
 }
 
 .number {

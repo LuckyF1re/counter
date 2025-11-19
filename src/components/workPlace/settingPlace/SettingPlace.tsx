@@ -14,18 +14,14 @@ type SettingPlaceType = {
 }
 
 export const SettingPlace = (props: SettingPlaceType   ) => {
-
-
     return (
         <div
             className={styles.window}>
             <div  className={styles.valuePlace}>
-
                 <div className={styles.setValue}>
                     <><b>Max value:</b></>
                     <><b>Min value:</b></>
                 </div>
-
                 <div className={styles.setValue}>
                     <input
                         id={"max"}
@@ -42,10 +38,7 @@ export const SettingPlace = (props: SettingPlaceType   ) => {
                         value={props.minValue}
                     />
                 </div>
-
             </div>
-
-
             <div className={styles.buttonPlace}>
                 <Button
                     onClick={()=>props.setMaxMinValue()}
