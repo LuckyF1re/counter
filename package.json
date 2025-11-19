@@ -6,7 +6,7 @@
   "homepage": "https://LuckyF1re.github.io/counter",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "pnpm run build",

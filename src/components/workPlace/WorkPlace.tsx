@@ -22,7 +22,7 @@ export const WorkPlace = () => {
         setCounter(count + 1);
     }
     const resetHandler = () => {
-        setCounter(0);
+        setCounter(minValue);
     }
     const maxValueHandler = (e: ChangeEvent<HTMLInputElement>) => {
             setMaxValue(parseInt(e.currentTarget.value));
